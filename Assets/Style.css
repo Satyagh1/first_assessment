@@ -3,6 +3,7 @@
     padding: 0;
 }
 body{
+    overflow-x: hidden;
     background-color: #FBF7EA;
 }
 .top_para{
@@ -27,17 +28,21 @@ body{
 }
 .search input{
     background-color: #F8F0D6;
-    color: #E1D7B1;
+    color: #000;
     border: none;
     width: 290px;
     height: 34px;
     padding: 0px 40px;
     border-radius: 20px;
 }
+::placeholder {
+    color: #E1D7B1;
+    opacity: 1;
+  }
 .search  img{
     position: absolute;
     right: 17px;
-    top: 9px;
+    top: 6px;
 }
 .logo img{
     height: 71px;
@@ -70,8 +75,132 @@ body{
 .slider{
     background-image: url(/Assets/Images/banner.jpg);
     background-repeat: no-repeat;
-    background-size: 98%;
-    height: 575px;
-    width: 98vw;
-    margin: 0;
+    background-size: 100%;
+    height: 100%;
+    width: 99vw;
+}
+.slider .owl-nav .sm-prev, 
+.slider .owl-nav .sm-next {
+    position: absolute !important;
+    border: none !important;
+    background: transparent !important;
+    cursor: pointer;
+    top: 40% !important;
+}
+.owl-nav .sm-prev{
+    z-index: 2 !important;
+    left: 45px !important;
+    transform: rotateY(180deg) !important;
+}
+.owl-nav .sm-next{
+    z-index: 2 !important;
+    right: 45px !important;
+}
+.special_deal{
+    background-image: url(/Assets/Images/Layer\ 2\ copy\ 3.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100vw;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+h2{
+text-align: center;
+color: #242424;
+font-size: 35px;
+font-weight: 200;
+padding-bottom: 18px;
+}
+.special_deal .image_deal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 30px;
+}
+.special_deal .image_deal img{
+    height: 50%;
+    width: 85%;
+}
+.pick{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.pick  .pick_your p{
+    width: 700px;
+    text-align: center;
+    color: #545454;
+}
+.pick .pick_your h2{
+    padding: 0;
+}
+.pick .pick_your {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.pick .image_pick {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22px;
+    column-gap: 1rem;
+}
+.pick .image_pick div img{
+    width: 100%;
+    height: 350px;
+}
+.pick .image_pick div p{
+    text-align: center;
+    color: #242424;
+    font-size: 22px;
+    font-weight: 100;
+}
+.new_arrivals{
+    padding-top: 52px;
+    width: 100vw;
+    background-color: #FAF4DD;
+    height: 500px;
+}
+.inner p{
+    font-size: 22px;
+    text-align: center;
+}
+.owl-stage{
+    column-gap: 80px !important;
+}
+.center .owl-item .item p{
+    transition: 0.3s;
+    margin-top: -50px;
+}
+.center .owl-item.center .item p{
+    margin-top: 0px;
+}
+.center .owl-item .item img {
+    transition: 0.3s;
+    transform: scale(0.70);
+    max-height: 486px;
+}
+.center .owl-item.center .item img {
+    max-height: 586px;
+    transform: scale(1.00);
+}
+.new_arrivals button .am-prev, 
+.new_arrivals button .am-next {
+    position: absolute !important;
+    border: none !important;
+    background: transparent !important;
+    cursor: pointer;
+    top: 140px !important;
+}
+button .am-prev{
+    z-index: 2 !important;
+    left: 40px !important;
+    transform: rotateY(180deg) !important;
+}
+button.am-next{
+    z-index: 2 !important;
+    right: 40px !important;
 }
