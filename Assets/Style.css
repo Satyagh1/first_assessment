@@ -1,13 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+/* whole body css */
+body {
     overflow-x: hidden;
     background-color: #FBF7EA;
 }
-.top_para{
-    background-image: url(/Assets/Images/header_strip.jpg);
+
+/* top section css */
+.top_para {
+    background-image: url(../Assets/Images/header_strip.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 39px;
@@ -17,16 +21,21 @@ body{
     color: #FAF4DD;
     font-size: 16px;
 }
-.navbar{
+
+/* navbar section css */
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 90px;
 }
-.search{
+
+/* search css */
+.search {
     position: relative;
 }
-.search input{
+
+.search input {
     background-color: #F8F0D6;
     color: #000;
     border: none;
@@ -35,51 +44,65 @@ body{
     padding: 0px 40px;
     border-radius: 20px;
 }
+
 ::placeholder {
     color: #E1D7B1;
     opacity: 1;
-  }
-.search  img{
+}
+
+.search img {
     position: absolute;
     right: 17px;
     top: 6px;
 }
-.logo img{
+
+.logo img {
     height: 71px;
     width: 100%;
 }
-.login img{
+
+.login img {
     height: 19px;
 }
-.login a{
+
+.login a {
     font-size: 15px;
     text-decoration: none;
     color: #242424;
 }
-.login span{
+
+.login span {
     font-size: 15px;
     margin: 15px;
 }
-.line{
-    border: 1px solid #F8F0D6 ;
+
+.line {
+    border: 1px solid #F8F0D6;
 }
-.nav_bottom{
+
+/* after nav section css */
+.nav_bottom {
     text-align: center;
     height: 32px;
     margin-top: 12px;
 }
-.nav_bottom span{
+
+.nav_bottom span {
     color: #211F1F;
     margin: auto 10px;
 }
-.slider{
-    background-image: url(/Assets/Images/banner.jpg);
+
+/* whole slider css */
+.slider {
+    background-image: url(../Assets/Images/banner.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     height: 100%;
     width: 99vw;
+    margin-bottom: 4%;
 }
-.slider .owl-nav .sm-prev, 
+
+.slider .owl-nav .sm-prev,
 .slider .owl-nav .sm-next {
     position: absolute !important;
     border: none !important;
@@ -87,120 +110,349 @@ body{
     cursor: pointer;
     top: 40% !important;
 }
-.owl-nav .sm-prev{
+
+.owl-nav .sm-prev {
     z-index: 2 !important;
     left: 45px !important;
     transform: rotateY(180deg) !important;
 }
-.owl-nav .sm-next{
+
+.owl-nav .sm-next {
     z-index: 2 !important;
     right: 45px !important;
 }
-.special_deal{
-    background-image: url(/Assets/Images/Layer\ 2\ copy\ 3.jpg);
+
+/* Spacial deal Css */
+.special_deal {
+    background-image: url(../Assets/Images/Layer\ 2\ copy\ 3.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 100vw;
+    padding-top: 4%;
+    padding-bottom: 4%;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-h2{
-text-align: center;
-color: #242424;
-font-size: 35px;
-font-weight: 200;
-padding-bottom: 18px;
+
+h2 {
+    text-align: center;
+    color: #242424;
+    font-size: 35px;
+    font-weight: 200;
+    padding-bottom: 3px;
 }
-.special_deal .image_deal{
+
+.special_deal .image_deal {
     display: flex;
     align-items: center;
     justify-content: space-between;
     column-gap: 30px;
 }
-.special_deal .image_deal img{
+
+.special_deal .image_deal img {
     height: 50%;
     width: 85%;
 }
-.pick{
+
+/* css for pick your mood */
+.pick {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.pick  .pick_your p{
+
+.pick .pick_your p {
     width: 700px;
     text-align: center;
     color: #545454;
 }
-.pick .pick_your h2{
+
+.pick .pick_your h2 {
     padding: 0;
 }
+
 .pick .pick_your {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
 }
+
 .pick .image_pick {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-top: 22px;
     column-gap: 1rem;
 }
-.pick .image_pick div img{
+
+.pick .image_pick div img {
     width: 100%;
     height: 350px;
 }
-.pick .image_pick div p{
+
+.pick .image_pick div p {
     text-align: center;
     color: #242424;
     font-size: 22px;
     font-weight: 100;
 }
-.new_arrivals{
+
+/* css for new arrivals  */
+.new_arrivals {
     padding-top: 52px;
     width: 100vw;
     background-color: #FAF4DD;
-    height: 500px;
+    height: 100%;
 }
-.inner p{
+
+.inner p {
     font-size: 22px;
     text-align: center;
 }
-.owl-stage{
-    column-gap: 80px !important;
-}
-.center .owl-item .item p{
-    transition: 0.3s;
-    margin-top: -50px;
-}
-.center .owl-item.center .item p{
+
+.center .owl-item.center .item p {
     margin-top: 0px;
 }
-.center .owl-item .item img {
+
+.inner {
     transition: 0.3s;
-    transform: scale(0.70);
-    max-height: 486px;
+    transform: scale(0.8);
 }
-.center .owl-item.center .item img {
-    max-height: 586px;
-    transform: scale(1.00);
+
+.center .owl-item.center .inner {
+    transform: scale(1) !important;
 }
-.new_arrivals button .am-prev, 
+
+.new_arrivals button .am-prev,
 .new_arrivals button .am-next {
     position: absolute !important;
     border: none !important;
     background: transparent !important;
     cursor: pointer;
-    top: 140px !important;
+    top: 45% !important;
 }
-button .am-prev{
+
+button .am-prev {
     z-index: 2 !important;
     left: 40px !important;
     transform: rotateY(180deg) !important;
 }
-button.am-next{
+
+button.am-next {
     z-index: 2 !important;
     right: 40px !important;
+}
+
+/* css for curvystyle and image ovelapping */
+.curvy {
+    width: 100%;
+    display: flex;
+    margin-top: 100px;
+}
+
+.curvy .left {
+    width: 50%;
+    margin-left: 8%;
+}
+
+.curvy .right {
+    background-image: url(../Assets/Images/background_img_curvy.png);
+    background-repeat: no-repeat;
+    background-position: right 0 bottom 0;
+    width: 50%;
+}
+
+/* .curvy .left .curvy_head{
+    width: 90%;
+} */
+.curvy .left .curvy_head h2,
+.curvy .left .curvy_head p {
+    text-align: left;
+    width: 80%;
+}
+
+.curvy .curvy_photo {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.curvy .curvy_photo button {
+    background-color: #C9211E;
+    color: #FFFFFF;
+    border: none;
+    width: 40%;
+    height: 10%;
+    padding: 16px;
+}
+
+.over_img {
+    position: absolute;
+    left: -29%;
+    bottom: -10%;
+    width: 55%;
+}
+
+.curvy .left .curvy_photo .down_img {
+    width: 86%;
+}
+
+.curvy .right img {
+    padding-bottom: 50px;
+    height: 85%;
+    width: 69%;
+}
+
+.image-setter {
+    position: relative;
+    width: 50%;
+}
+
+/* css for style for every ocassion */
+.ocassion {
+    padding-top: 5%;
+    padding-bottom: 4%;
+    background-color: #FAF4DD;
+}
+
+.ocassion .ocassion_head p {
+    width: 700px;
+    text-align: center;
+    color: #545454;
+}
+
+.ocassion .ocassion_head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image_ocassion {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 14px;
+    column-gap: 1rem;
+}
+
+.ocassion .image_ocassion div img {
+    width: 100%;
+    height: 350px;
+}
+
+.ocassion .image_ocassion div p {
+    text-align: center;
+    color: #242424;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/* css for beast seller section */
+.bestseller {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bestseller .bestseller-head p {
+    width: 700px;
+    text-align: center;
+    color: #545454;
+}
+
+.bestseller .bestseller-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.bestseller button .bm-prev,
+.bestseller button .bm-next {
+    position: absolute !important;
+    border: none !important;
+    background: transparent !important;
+    cursor: pointer;
+    top: 45% !important;
+}
+
+button .bm-prev {
+    z-index: 2 !important;
+    left: -6% !important;
+    transform: rotateY(180deg) !important;
+}
+
+button .bm-next {
+    z-index: 2 !important;
+    right: -6% !important;
+}
+
+.bestseller .owl-bestseller {
+    margin-top: 13px;
+    width: 90%;
+}
+
+.item-best {
+    margin: auto 12px;
+}
+
+/* css for hue of the season */
+.image-hue {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2%;
+    row-gap: 15px;
+    padding-top: 2%;
+}
+
+/* css for get a first look */
+.get-head {
+    text-align: center;
+    color: #545454;
+}
+
+.image-get {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    column-gap: 2%;
+    padding-top: 2%;
+    margin: auto 2%;
+}
+.image-get div{
+    width: 18%;
+}
+.image-get div img{
+    width: 100%;
+}
+.ship{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+}
+ .ship-inner{
+    background-color: #FAF4DD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.ship-inner img{
+    width: 45px;
+    padding: 28%;
+}
+.ship-container p{
+padding: 10px;
 }
