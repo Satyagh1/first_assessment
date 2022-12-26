@@ -3,61 +3,80 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: dosis;
+    src: url(../Fonts/Dosis-Regular.ttf);
+  }
+  @font-face {
+    font-family: Dream_Orphans;
+    src: url(../Fonts/Dream\ Orphans.otf);
+  }
 /* whole body css */
 body {
-    overflow-x: hidden;
     background-color: #FBF7EA;
+    overflow-x: hidden;
 }
-
+P,del {
+    font-family: dosis;
+}
 /* top section css */
-.top_para {
-    background-image: url(../Assets/Images/header_strip.jpg);
+.top{
+    width: 100vw;
+}
+.top .overlay{
+    background-image: url(../Images/header_strip.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    height: 39px;
-    width: 100vw;
+}
+.top_para {
+    width: 100%;
     text-align: center;
-    padding-top: 9px;
     color: #FAF4DD;
     font-size: 16px;
+    padding: 1vw 0vw;
+
 }
 
 /* navbar section css */
 .navbar {
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 90px;
+    height: 60px;
 }
 
 /* search css */
 .search {
     position: relative;
+    width: 17vw;
 }
 
 .search input {
     background-color: #F8F0D6;
     color: #000;
     border: none;
-    width: 290px;
-    height: 34px;
-    padding: 0px 40px;
+    width: 90%;
+    height: 2.8vw;
+    padding: 0px 10%;
     border-radius: 20px;
 }
 
 ::placeholder {
+    font-family: dosis;
     color: #E1D7B1;
     opacity: 1;
+    font-size: 1vw;
 }
 
 .search img {
     position: absolute;
-    right: 17px;
-    top: 6px;
+    right: 0vw;
+    top: 0.6vw;
+    width: 1.5vw;
 }
 
 .logo img {
-    height: 71px;
     width: 100%;
 }
 
@@ -73,7 +92,6 @@ body {
 
 .login span {
     font-size: 15px;
-    margin: 15px;
 }
 
 .line {
@@ -82,24 +100,34 @@ body {
 
 /* after nav section css */
 .nav_bottom {
+    width: 100vw;
     text-align: center;
     height: 32px;
     margin-top: 12px;
+    font-size: 1.3vw;
 }
-
-.nav_bottom span {
+.nav_bottom ul {
+    display: flex;
+    justify-content: center;
+}
+.nav_bottom ul li {
+    list-style: none;
     color: #211F1F;
     margin: auto 10px;
+    font-family: dosis;
 }
 
 /* whole slider css */
 .slider {
-    background-image: url(../Assets/Images/banner.jpg);
+    background-image: url(../Images/banner.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     height: 100%;
-    width: 99vw;
+    width: 100vw;
     margin-bottom: 4%;
+}
+.item{
+    width: 100%;
 }
 
 .slider .owl-nav .sm-prev,
@@ -124,7 +152,7 @@ body {
 
 /* Spacial deal Css */
 .special_deal {
-    background-image: url(../Assets/Images/Layer\ 2\ copy\ 3.jpg);
+    background-image: url(../Images/Layer\ 2\ copy\ 3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100vw;
@@ -137,39 +165,43 @@ body {
 }
 
 h2 {
+    font-family: Dream_Orphans;
     text-align: center;
     color: #242424;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 200;
-    padding-bottom: 3px;
+    padding-bottom: 20px;
 }
 
 .special_deal .image_deal {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    column-gap: 30px;
+    justify-content: center;
+    column-gap: 1.5vw;
+    flex-wrap: wrap;
+    row-gap: 1.5vw;
 }
 
 .special_deal .image_deal img {
     height: 50%;
-    width: 85%;
+    width: 100%;
 }
 
 /* css for pick your mood */
 .pick {
+    width: 100vw;
     margin-top: 50px;
     margin-bottom: 50px;
 }
 
 .pick .pick_your p {
-    width: 700px;
     text-align: center;
     color: #545454;
+    width: 46%;
 }
 
 .pick .pick_your h2 {
-    padding: 0;
+    padding: 9px 0px;
 }
 
 .pick .pick_your {
@@ -233,6 +265,11 @@ h2 {
     background: transparent !important;
     cursor: pointer;
     top: 45% !important;
+    width: 5vw;
+}
+.new_arrivals button .am-prev img,
+.new_arrivals button .am-next img{
+    width: 4vw;
 }
 
 button .am-prev {
@@ -248,18 +285,19 @@ button.am-next {
 
 /* css for curvystyle and image ovelapping */
 .curvy {
-    width: 100%;
+    width: 100vw;
     display: flex;
     margin-top: 100px;
+    flex-wrap: wrap;
 }
 
 .curvy .left {
-    width: 50%;
+    width: 42%;
     margin-left: 8%;
 }
 
 .curvy .right {
-    background-image: url(../Assets/Images/background_img_curvy.png);
+    background-image: url(../Images/background_img_curvy.png);
     background-repeat: no-repeat;
     background-position: right 0 bottom 0;
     width: 50%;
@@ -287,6 +325,7 @@ button.am-next {
     width: 40%;
     height: 10%;
     padding: 16px;
+    font-family: dosis;
 }
 
 .over_img {
@@ -319,7 +358,6 @@ button.am-next {
 }
 
 .ocassion .ocassion_head p {
-    width: 700px;
     text-align: center;
     color: #545454;
 }
@@ -361,41 +399,59 @@ button.am-next {
 }
 
 .bestseller .bestseller-head p {
-    width: 700px;
     text-align: center;
     color: #545454;
 }
-
+.item-best P{
+    font-size: 11px;
+    padding-top: 9px;
+}
+.item-best .price p{
+    font-size: 16px;
+    padding: 0;
+}
+.item-best .price{
+    padding: 9px 0px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+.discount{
+    color: #d4534d;
+}
 .bestseller .bestseller-head {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
 }
-
+.bestseller button .bm-prev img,
+.bestseller button .bm-next img{
+    width: 70%;
+}
 .bestseller button .bm-prev,
 .bestseller button .bm-next {
     position: absolute !important;
     border: none !important;
     background: transparent !important;
     cursor: pointer;
-    top: 45% !important;
+    top: 30% !important;
 }
 
 button .bm-prev {
     z-index: 2 !important;
-    left: -6% !important;
+    left: -4.5% !important;
     transform: rotateY(180deg) !important;
 }
 
 button .bm-next {
     z-index: 2 !important;
-    right: -6% !important;
+    right: -4.5% !important;
 }
 
 .bestseller .owl-bestseller {
     margin-top: 13px;
-    width: 90%;
+    width: 85%;
 }
 
 .item-best {
@@ -438,10 +494,10 @@ button .bm-next {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-bottom: 50px;
+    padding: 0px 115px 40px;
 }
  .ship-inner{
-    background-color: #FAF4DD;
+     background-color: #FAF4DD;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -455,4 +511,87 @@ button .bm-next {
 }
 .ship-container p{
 padding: 10px;
+}
+.footer-outer {
+    background-image: url(../Images/Group\ 38.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    padding-top: 4%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+}
+.footer-head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.footer-outer h2{
+    color: #fff;
+    font-size: 150%;
+}
+.footer-outer .footer-head div{
+    width: 110%;
+    padding-top: 1%;
+}
+.footer-outer .footer-head div button {
+    background-color: #C9211E;
+    color: #FFFFFF;
+    border: none;
+    width: 20%;
+    padding: 2%;
+    cursor: pointer;
+}
+.footer-outer .footer-head div input {
+    background-color: #F8F0D6;
+    color: #000;
+    border: none;
+    width: 58%;
+    height: 30px;
+    padding: 0.5% 10%;
+}
+.footer-inner {
+    display: flex;
+    background-color : #FAF4DD;
+    padding: 4% 9%;
+    margin-top: 3vw;
+    flex-wrap: wrap;
+}
+.info-dis{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.info{
+    width: 145px;
+    padding: 0vw 2vw;
+}
+.footer-inner .info-dis .info h3{
+    color: #242424;
+font-weight: 600;
+}
+.footer-inner .info-dis .info ul li{
+    list-style: none;
+    padding: 9% 0%;
+}
+.footer-inner .info-dis .info ul li a{
+    text-decoration: none;
+    color: #242424;
+}
+.last{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    padding:20px 0px;
+}
+.last img{
+    width: 15%;
+}
+.last p{
+    color: #9D9E9E;
 }

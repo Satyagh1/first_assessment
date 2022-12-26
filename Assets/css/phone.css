@@ -1,0 +1,140 @@
+@media only screen and (max-width: 690px) {
+body{
+    overflow-x: hidden;
+}
+p {
+    font-size: 12px;
+    text-align: center;
+}
+h2{
+    font-size: 18px;
+}
+.top_para{
+    font-size: 11px;
+}
+.search{
+    width: 19vw;
+}
+.search img{
+        top: 5px;
+        right: -4px;
+}
+.logo{
+    width: 28%;
+}
+.login {
+    width: 20%;
+}
+.login a{
+    font-size: 8px;
+}
+.login span {
+    font-size: 11px;
+}
+.login img {
+    height: 10px;
+}
+.slider .owl-nav .sm-prev img,
+.slider .owl-nav .sm-next img{
+    width: 50%;
+}
+.owl-nav .sm-prev {
+    left: 17px !important;
+}
+.item {
+    width: 100%;
+}
+.owl-nav .sm-next {
+    right: 17px !important;
+}
+.nav_bottom {
+    font-size: 2.2vw;
+}
+.new_arrivals button .am-prev,
+.new_arrivals button .am-next {
+    top: 40% !important;
+}
+button .am-prev {
+    left: 17px !important;
+}
+button.am-next {
+    right: 17px !important;
+}
+.inner p {
+    font-size: 9px;
+}
+.curvy .left{
+    width: 100%;
+}
+.curvy .right {
+    width: 100%;
+}
+.bestseller button .bm-prev,
+.bestseller button .bm-next{
+    top: 26% !important;
+}
+.bestseller button .bm-prev img,
+.bestseller button .bm-next img{
+    width: 50%;
+}
+button .bm-prev {
+    left: -10% !important;
+}
+button .bm-next {
+    right: -10% !important;
+}
+.image-hue div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-hue div img{
+    width: 70%;
+}
+.ship-container {
+    width: 10%;
+}
+.ship-inner img {
+    width: 17px;
+    padding: 31%;
+}
+.ship-container p {
+    font-size: 7px;
+    padding: 5px 0px;
+}
+.footer-outer h2 {
+    font-size: 95%;
+}
+::placeholder {
+    color: #E1D7B1;
+    opacity: 1;
+    font-size: 8px;
+}
+.footer-inner {
+    padding: 4% 3%;
+}
+.last{
+    width: 100%;
+}
+.last img {
+    width: 20%;
+}
+}
+@media only screen and (max-width: 530px) {
+    .search img {
+        top: 7px;
+        right: -3px;
+    }
+    .footer-outer .footer-head div {
+        width: 95%;
+    }
+    .info-dis {
+        width: 100%;
+    }
+    .last img {
+        width: 30%;
+    }
+    p {
+        font-size: 9px;
+    }
+}

@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>First Week Assesment</title>
-    <link rel="stylesheet" href="Assets/Style.css">
+    <link rel="stylesheet" href="Assets/css/Style.css">
+    <link rel="stylesheet" href="Assets/css/phone.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.css" />
@@ -19,8 +20,11 @@
 <body>
     <!-- section for top most visible section -->
     <setion class="top">
-        <p class="top_para">Get up to 60% Off | Addl. 10% Off on your first purchase, min order ₹999; Use Code: JKNEW10
-            | Addl. 10% on prepaid orders | Free shipping on orders above ₹599</p>
+        <div class="overlay">
+            <p class="top_para">Get up to 60% Off | Addl. 10% Off on your first purchase, min order ₹999; Use Code:
+                JKNEW10
+                | Addl. 10% on prepaid orders | Free shipping on orders above ₹599</p>
+        </div>
     </setion>
     <!-- section for our navbar -->
     <nav class="navbar">
@@ -43,9 +47,17 @@
     <div class="line"></div>
     <!-- section for after the line and the navbar section -->
     <div class="nav_bottom">
-        <span>New Arrivals</span><span>Kurtas & Kurtis</span><span>Ethnic Wear Sets</span><span>Bottom
-            Wear</span><span>Lounge Wear</span><span>Fusion
-            Wear</span><span>Sale</span><span>Collections</span><span>Plus-size</span><span>Exclusive</span>
+        <ul>
+            <li>New Arrivals</li>
+            <li>Kurtas & Kurtis</li>
+            <li>Ethnic Wear Sets</li>
+            <li>Bottom Wear</li>
+            <li>Lounge Wear</li>
+            <li>Fusion Wear</li>
+            <li>Collections</li>
+            <li>Plus-size</li>
+            <li>Exclusive</li>
+        </ul>
     </div>
     <!-- setion for slider -->
     <div class="slider">
@@ -209,18 +221,48 @@
         <div class="owl-carousel owl-bestseller">
             <div class="item-best">
                 <img src="Assets/Images/Image 23.jpg" alt="">
+                <p>Purple Printed Silk Blend Straight Kurta with Pants</p>
+                <div class="price">
+                    <del>2099 </del>
+                    <p>1050</p>
+                    <p class="discount">(50%OFF)</p>
+                </div>
             </div>
             <div class="item-best">
                 <img src="Assets/Images/Image 24.jpg" alt="">
+                <p>Purple Printed Silk Blend Straight Kurta with Pants</p>
+                <div class="price">
+                    <del>2099 </del>
+                    <p>1050</p>
+                    <p class="discount">(50%OFF)</p>
+                </div>
             </div>
             <div class="item-best">
                 <img src="Assets/Images/Image 25.jpg" alt="">
+                <p>Purple Printed Silk Blend Straight Kurta with Pants</p>
+                <div class="price">
+                    <del>2099 </del>
+                    <p>1050</p>
+                    <p class="discount">(50%OFF)</p>
+                </div>
             </div>
             <div class="item-best">
                 <img src="Assets/Images/Image 26.jpg" alt="">
+                <p>Purple Printed Silk Blend Straight Kurta with Pants</p>
+                <div class="price">
+                    <del>2099 </del>
+                    <p>1050</p>
+                    <p class="discount">(50%OFF)</p>
+                </div>
             </div>
             <div class="item-best">
                 <img src="Assets/Images/Image 24.jpg" alt="">
+                <p>Purple Printed Silk Blend Straight Kurta with Pants</p>
+                <div class="price">
+                    <del>2099 </del>
+                    <p>1050</p>
+                    <p class="discount">(50%OFF)</p>
+                </div>
             </div>
         </div>
         <div class="slider_nav">
@@ -300,6 +342,68 @@
             <p>Eassy Return</p>
         </div>
     </div>
+    <!-- Section for footer -->
+    <footer class="footer-outer">
+        <div class="footer-head pick_your">
+            <h2>SIGN UP TO ENVISION JAIPUR CULTURES</h2>
+            <p>Get exclusive access to our latest offers, new launches, style tips and much more.</p>
+            <div>
+                <input type="text" placeholder="Enter your Email Address">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        <div class="footer-inner">
+            <div class="info-dis">
+                <div class="info">
+                    <h3>Information</h3>
+                    <ul>
+                        <li><a href="#">My account</a></li>
+                        <li><a href="#"> Privacy policy</a></li>
+                        <li><a href="#"> Shipping policy</a></li>
+                        <li><a href="#">Return / Exchange policy</a></li>
+                        <li><a href="#">Term & Conditions</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h3>Discover</h3>
+                    <ul>
+                        <li><a href="#">Blog Meet </a></li>
+                        <li><a href="#"> About us </a></li>
+                        <li><a href="#">Meet the founder </a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Store locator</a></li>
+                        <li><a href="#">Business / Wholesale</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-dis">
+                <div class="info">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Straight Kurta</a></li>
+                        <li><a href="#">Anarkali Kurta</a></li>
+                        <li><a href="#">Kurta Set</a></li>
+                        <li><a href="#">Palazzos</a></li>
+                        <li><a href="#">Skirts Dresses</a></li>
+                    </ul>
+                </div>
+                <div class="info">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li><a href="#">Facebook </a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Pinterest</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="last">
+            <img src="Assets/Images/PB_GH.png" alt="">
+            <p>COPYRIGHT © 2021 JAIPURKURTI.COM. ALL RIGHTS RESERVED.</p>
+            <p></p>
+        </div>
+    </footer>
 
     <script src="Assets/javascript/main.js"></script>
 </body>
