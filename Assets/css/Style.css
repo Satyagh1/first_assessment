@@ -27,6 +27,7 @@ P,del {
     background-image: url(../Images/header_strip.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
+    background-size: cover;
 }
 .top_para {
     width: 100%;
@@ -44,6 +45,7 @@ P,del {
     align-items: center;
     justify-content: space-around;
     height: 60px;
+    padding: 2% 0px;
 }
 
 /* search css */
@@ -78,8 +80,13 @@ P,del {
 
 .logo img {
     width: 100%;
+    height: 70px;
 }
-
+.navbar .login{
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+}
 .login img {
     height: 19px;
 }
@@ -99,22 +106,48 @@ P,del {
 }
 
 /* after nav section css */
-.nav_bottom {
+
+.nav_bottom button{
+    border: none;
+    top: 2%;
+    right: 52%;
+}
+.toggler{
+    display: none;
+}
+.toggler-icon {
+    transform: rotate(90deg);
+    display: flex;
+    font-size: 4.5vw;
+    background: transparent;
+}
+.mobile-menu {
     width: 100vw;
     text-align: center;
-    height: 32px;
     margin-top: 12px;
-    font-size: 1.3vw;
+    font-size: 1.5vw;
+    margin-bottom: 1%;
 }
-.nav_bottom ul {
+.nav_bottom .mobile-menu .navbar-nav {
     display: flex;
     justify-content: center;
 }
-.nav_bottom ul li {
+.nav_bottom .mobile-menu .navbar-nav li {
     list-style: none;
+}
+.nav_bottom .mobile-menu .navbar-nav li a{
+    text-decoration: none;
     color: #211F1F;
     margin: auto 10px;
     font-family: dosis;
+}
+.close{
+    display: none;
+    top: 39%;
+    right: 0px;
+    position: absolute;
+    font-size: 24px;
+    background:transparent;
 }
 
 /* whole slider css */
@@ -219,7 +252,9 @@ h2 {
     margin-top: 22px;
     column-gap: 1rem;
 }
-
+.image_pick div{
+    margin-bottom: 3%;
+}
 .pick .image_pick div img {
     width: 100%;
     height: 350px;
@@ -235,6 +270,7 @@ h2 {
 /* css for new arrivals  */
 .new_arrivals {
     padding-top: 52px;
+    padding-bottom: 52px;
     width: 100vw;
     background-color: #FAF4DD;
     height: 100%;
@@ -264,7 +300,7 @@ h2 {
     border: none !important;
     background: transparent !important;
     cursor: pointer;
-    top: 45% !important;
+    top: 40% !important;
     width: 5vw;
 }
 .new_arrivals button .am-prev img,
@@ -368,7 +404,9 @@ button.am-next {
     align-items: center;
     flex-wrap: wrap;
 }
-
+.image_ocassion div{
+    margin-bottom: 3%;
+}
 .image_ocassion {
     display: flex;
     flex-wrap: wrap;
@@ -403,7 +441,7 @@ button.am-next {
     color: #545454;
 }
 .item-best P{
-    font-size: 11px;
+    font-size: 16px;
     padding-top: 9px;
 }
 .item-best .price p{
@@ -412,7 +450,7 @@ button.am-next {
 }
 .item-best .price{
     padding: 9px 0px;
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
 }
@@ -435,7 +473,7 @@ button.am-next {
     border: none !important;
     background: transparent !important;
     cursor: pointer;
-    top: 30% !important;
+    top: 27% !important;
 }
 
 button .bm-prev {
@@ -494,7 +532,7 @@ button .bm-next {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding: 0px 115px 40px;
+    padding: 0px 8% 3%;
 }
  .ship-inner{
      background-color: #FAF4DD;
@@ -556,42 +594,47 @@ padding: 10px;
 }
 .footer-inner {
     display: flex;
-    background-color : #FAF4DD;
+    background-color: #FAF4DD;
     padding: 4% 9%;
     margin-top: 3vw;
     flex-wrap: wrap;
+    width: 65%;
+    justify-content: space-evenly;
 }
-.info-dis{
-    display: flex;
-    justify-content: center;
-    width: 50%;
+.info.custom-menu {
+    width: 20%;
 }
-.info{
-    width: 145px;
-    padding: 0vw 2vw;
+#follow{
+    width:10%
 }
-.footer-inner .info-dis .info h3{
+.info .mobile-view{
+    width: 171px;
+}
+.footer-inner .info h3{
     color: #242424;
-font-weight: 600;
+font-weight: 400;
+font-family: Dream_Orphans;
 }
-.footer-inner .info-dis .info ul li{
+.footer-inner .info .mobile-view ul li{
     list-style: none;
-    padding: 9% 0%;
+    padding-top: 9%;
 }
-.footer-inner .info-dis .info ul li a{
+.footer-inner .info .mobile-view ul li a{
     text-decoration: none;
     color: #242424;
+    font-family: dosis;
 }
 .last{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 70%;
-    padding:20px 0px;
+    width: 83%;
+    padding: 20px 0px;
 }
 .last img{
     width: 15%;
 }
 .last p{
     color: #9D9E9E;
+    padding-right: 3.5%;
 }

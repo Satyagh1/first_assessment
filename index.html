@@ -46,18 +46,29 @@
     <!-- this is a line after the navbar -->
     <div class="line"></div>
     <!-- section for after the line and the navbar section -->
-    <div class="nav_bottom">
-        <ul>
-            <li>New Arrivals</li>
-            <li>Kurtas & Kurtis</li>
-            <li>Ethnic Wear Sets</li>
-            <li>Bottom Wear</li>
-            <li>Lounge Wear</li>
-            <li>Fusion Wear</li>
-            <li>Collections</li>
-            <li>Plus-size</li>
-            <li>Exclusive</li>
-        </ul>
+    <div id="myNavbar" class="nav_bottom">
+        <button type="button" class="toggler">
+            <span class="toggler-icon">
+                <span>|</span>
+                <span>|</span>
+                <span>|</span>
+            </span></button>
+        <div class="mobile-menu">
+            <ul class="navbar-nav">
+                <li><a href="#" class="nav-link">New Arrivals</a></li>
+                <li><a href="#" class="nav-link">Kurtas & Kurtis</a></li>
+                <li><a href="#" class="nav-link">Ethnic Wear Sets</a></li>
+                <li><a href="#" class="nav-link">Bottom Wear</a></li>
+                <li><a href="#" class="nav-link">Lounge Wear</a></li>
+                <li><a href="#" class="nav-link">Fusion Wear</a></li>
+                <li><a href="#" class="nav-link">Collections</a></li>
+                <li><a href="#" class="nav-link">Plus-size</a></li>
+                <li><a href="#" class="nav-link">Exclusive</a></li>
+            </ul>
+        </div>
+        <button class="close">
+            <span>X</span>
+        </button>
     </div>
     <!-- setion for slider -->
     <div class="slider">
@@ -353,19 +364,21 @@
             </div>
         </div>
         <div class="footer-inner">
-            <div class="info-dis">
-                <div class="info">
-                    <h3>Information</h3>
+            <div class="info custom-menu">
+                <h3 class="label">Information</h3>
+                <div class="mobile-view">
                     <ul>
-                        <li><a href="#">My account</a></li>
-                        <li><a href="#"> Privacy policy</a></li>
-                        <li><a href="#"> Shipping policy</a></li>
-                        <li><a href="#">Return / Exchange policy</a></li>
-                        <li><a href="#">Term & Conditions</a></li>
+                        <li><a href="#" class="">My account</a></li>
+                        <li><a href="#" class=""> Privacy policy</a></li>
+                        <li><a href="#" class=""> Shipping policy</a></li>
+                        <li><a href="#" class="">Return / Exchange policy</a></li>
+                        <li><a href="#" class="">Term & Conditions</a></li>
                     </ul>
                 </div>
-                <div class="info">
-                    <h3>Discover</h3>
+            </div>
+            <div class="info custom-menu">
+                <h3 class="label">Discover</h3>
+                <div class="mobile-view">
                     <ul>
                         <li><a href="#">Blog Meet </a></li>
                         <li><a href="#"> About us </a></li>
@@ -376,9 +389,9 @@
                     </ul>
                 </div>
             </div>
-            <div class="info-dis">
-                <div class="info">
-                    <h3>Quick Links</h3>
+            <div class="info custom-menu">
+                <h3 class="label">Quick Links</h3>
+                <div class="mobile-view">
                     <ul>
                         <li><a href="#">Straight Kurta</a></li>
                         <li><a href="#">Anarkali Kurta</a></li>
@@ -387,9 +400,12 @@
                         <li><a href="#">Skirts Dresses</a></li>
                     </ul>
                 </div>
-                <div class="info">
-                    <h3>Follow us</h3>
+            </div>
+            <div class="info custom-menu" id="follow">
+                <h3 class="label">Follow us</h3>
+                <div class="mobile-view">
                     <ul>
+
                         <li><a href="#">Facebook </a></li>
                         <li><a href="#">Instagram</a></li>
                         <li><a href="#">Pinterest</a></li>

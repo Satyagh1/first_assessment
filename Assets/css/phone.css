@@ -22,6 +22,9 @@ h2{
 .logo{
     width: 28%;
 }
+.logo img{
+    height: 50px;
+}
 .login {
     width: 20%;
 }
@@ -33,6 +36,42 @@ h2{
 }
 .login img {
     height: 10px;
+}
+.nav_bottom {
+    position: absolute;
+    top: 15.5%;
+    left: 2%;
+    z-index: 100;
+}
+.navbar-nav {
+    flex-direction: column;
+}
+.navbar-nav li{
+    padding: 7% 2%;
+}
+.toggler{
+    display: block;
+}
+.toggler-dis{
+    display: none;
+}
+.mobile-menu{
+    display: none;
+    position: relative;
+    text-align: left;
+}
+.mobile-menu {
+    left: 0;
+    width: 50%;
+}
+.nav_bottom .mobile-menu .navbar-nav li a {
+    font-size: 16px;
+}
+.active-menu{
+    display: block;
+    position: fixed;
+    background-color: #fbf7ea;
+    top: -12px;
 }
 .slider .owl-nav .sm-prev img,
 .slider .owl-nav .sm-next img{
@@ -47,13 +86,7 @@ h2{
 .owl-nav .sm-next {
     right: 17px !important;
 }
-.nav_bottom {
-    font-size: 2.2vw;
-}
-.new_arrivals button .am-prev,
-.new_arrivals button .am-next {
-    top: 40% !important;
-}
+
 button .am-prev {
     left: 17px !important;
 }
@@ -68,6 +101,14 @@ button.am-next {
 }
 .curvy .right {
     width: 100%;
+}
+.item-best .price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.item-best P {
+    font-size: 11px;
 }
 .bestseller button .bm-prev,
 .bestseller button .bm-next{
@@ -99,7 +140,7 @@ button .bm-next {
     padding: 31%;
 }
 .ship-container p {
-    font-size: 7px;
+    font-size: 9px;
     padding: 5px 0px;
 }
 .footer-outer h2 {
@@ -113,11 +154,44 @@ button .bm-next {
 .footer-inner {
     padding: 4% 3%;
 }
-.last{
+.mobile-view{
+    display: none;
+}
+.info.custom-menu {
+    width: 100%;
+    padding-bottom: 3%;
+}
+#follow {
     width: 100%;
 }
-.last img {
+.label{
+    position: relative;
+  cursor: pointer;
+}
+.label::before{
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    font-size: 40px;
+    transform: translatey(-50%);
+}
+.active.label::before{
+    content: '-';
+    font-size: 40px;
+}
+.active{
+    display: block;
+}
+.last{
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+.last img{
     width: 20%;
+    padding: 2% 0px;
 }
 }
 @media only screen and (max-width: 530px) {
