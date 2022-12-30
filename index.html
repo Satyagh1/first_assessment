@@ -19,18 +19,22 @@
 
 <body>
     <!-- section for top most visible section -->
-    <setion class="top">
+    <section class="top">
         <div class="overlay">
             <p class="top_para">Get up to 60% Off | Addl. 10% Off on your first purchase, min order ₹999; Use Code:
                 JKNEW10
                 | Addl. 10% on prepaid orders | Free shipping on orders above ₹599</p>
         </div>
-    </setion>
+    </section>
     <!-- section for our navbar -->
     <nav class="navbar">
-        <div class="search">
+        <div class="search" id="mysearch">
             <input type="text" name="search" placeholder="What are you looking for ?">
-            <img src="Assets/Images/search-interface-symbol.png" alt="">
+            <img class="search-click" src="Assets/Images/search-interface-symbol.png" alt="">
+            <div class="crossmark">X</div>
+        </div>
+        <div class="top-search">
+            <img src="assets/Images/search-interface-symbol.png" alt="">
         </div>
         <div class="logo">
             <img src="Assets/Images/ezgif.com-gif-maker (8).png" alt="">
@@ -46,30 +50,32 @@
     <!-- this is a line after the navbar -->
     <div class="line"></div>
     <!-- section for after the line and the navbar section -->
-    <div id="myNavbar" class="nav_bottom">
+    <section id="myNavbar" class="nav_bottom">
         <button type="button" class="toggler">
             <span class="toggler-icon">
                 <span>|</span>
                 <span>|</span>
                 <span>|</span>
             </span></button>
-        <div class="mobile-menu">
-            <ul class="navbar-nav">
-                <li><a href="#" class="nav-link">New Arrivals</a></li>
-                <li><a href="#" class="nav-link">Kurtas & Kurtis</a></li>
-                <li><a href="#" class="nav-link">Ethnic Wear Sets</a></li>
-                <li><a href="#" class="nav-link">Bottom Wear</a></li>
-                <li><a href="#" class="nav-link">Lounge Wear</a></li>
-                <li><a href="#" class="nav-link">Fusion Wear</a></li>
-                <li><a href="#" class="nav-link">Collections</a></li>
-                <li><a href="#" class="nav-link">Plus-size</a></li>
-                <li><a href="#" class="nav-link">Exclusive</a></li>
-            </ul>
+        <div class="outer-layout">
+            <div class="mobile-menu">
+                <ul class="navbar-nav">
+                    <li><a href="#" class="nav-link">New Arrivals</a></li>
+                    <li><a href="#" class="nav-link">Kurtas & Kurtis</a></li>
+                    <li><a href="#" class="nav-link">Ethnic Wear Sets</a></li>
+                    <li><a href="#" class="nav-link">Bottom Wear</a></li>
+                    <li><a href="#" class="nav-link">Lounge Wear</a></li>
+                    <li><a href="#" class="nav-link">Fusion Wear</a></li>
+                    <li><a href="#" class="nav-link">Collections</a></li>
+                    <li><a href="#" class="nav-link">Plus-size</a></li>
+                    <li><a href="#" class="nav-link">Exclusive</a></li>
+                </ul>
+            </div>
+            <button class="close">
+                <span>X</span>
+            </button>
         </div>
-        <button class="close">
-            <span>X</span>
-        </button>
-    </div>
+    </section>
     <!-- setion for slider -->
     <div class="slider">
         <div class="owl-carousel owl-demo">
@@ -87,7 +93,7 @@
 
     </div>
     <!-- special deal section -->
-    <div class="special_deal">
+    <section class="special_deal">
         <div class="heading_deal">
             <h2>SPECIAL DEALS</h2>
         </div>
@@ -105,9 +111,9 @@
                 <img src="Assets/Images/Group 41.jpg" alt="">
             </div>
         </div>
-    </div>
+    </section>
     <!-- section for pick your mood  -->
-    <div class="pick">
+    <section class="pick">
         <div class="pick_your">
             <h2>PICK YOUR MOOD</h2>
             <p>Presenting an exquisite collection of Kurtis, suit sets, and loungewear. The vibrant colors, rich fabrics
@@ -131,9 +137,9 @@
                 <p>Bottom wear</p>
             </div>
         </div>
-    </div>
+    </section>
     <!-- section for new arrivals -->
-    <div class="new_arrivals">
+    <section class="new_arrivals">
         <div class="heading_deal">
             <h2>New Arrivals</h2>
         </div>
@@ -179,9 +185,9 @@
             <button class="am-prev"><img src="Assets/Images/Group 33.png" alt=""></button>
             <button class="am-next"><img src="Assets/Images/Group 33.png" alt=""></button>
         </div>
-    </div>
+    </section>
     <!-- anohter section for curvy style section and image ovalapping -->
-    <div class="curvy">
+    <section class="curvy">
         <div class="left">
             <div class="curvy_head">
                 <h2>THE CURVY STYLES</h2>
@@ -201,7 +207,7 @@
         <div class="right">
             <img src="Assets/Images/Image 18.jpg" alt="">
         </div>
-    </div>
+    </section>
     <!-- section for styles for every ocassion -->
     <div class="ocassion">
         <div class="ocassion_head">
@@ -224,10 +230,15 @@
         </div>
     </div>
     <!-- section for bestseller images with slider -->
-    <div class="bestseller pick">
+    <section class="bestseller pick">
         <div class="bestseller-head">
             <h2>Bestsellers</h2>
-            <p>Kurta | Kurta Set | Dresses | Bottom</p>
+            <ul>
+                <li><a href="#">Kurta</a></li><span> |</span>
+                <li><a href="#">Kurta Set</a></li><span> |</span>
+                <li><a href="#">Dresses</a></li><span> |</span>
+                <li><a href="#">Bottom</a></li><span> |</span> 
+            </ul>
         </div>
         <div class="owl-carousel owl-bestseller">
             <div class="item-best">
@@ -280,9 +291,9 @@
             <button class="bm-prev"><img src="Assets/Images/Group 33.png" alt=""></button>
             <button class="bm-next"><img src="Assets/Images/Group 33.png" alt=""></button>
         </div>
-    </div>
+    </section>
     <!-- section for hue of the season  -->
-    <div class=" hue special_deal">
+    <section class=" hue special_deal">
         <div class=" hue_head heading_deal">
             <h2>HUES OF THE SEASON</h2>
             <p>Now choose your perfect fit from your favorite color palette.</p>
@@ -301,9 +312,9 @@
                 <img src="Assets/Images/Group 37.jpg" alt="">
             </div>
         </div>
-    </div>
+    </section>
     <!-- section for get a first look -->
-    <div class="get-look pick">
+    <section class="get-look pick">
         <div class="get-head">
             <h2>Get a first look</h2>
             <p>Shop from Instagram @jaipurkurti</p>
@@ -325,9 +336,28 @@
                 <img src="Assets/Images/Mask Group 9.jpg" alt="">
             </div>
         </div>
-    </div>
+        <div class="owldis">
+            <div class="owl-carousel get-owl">
+                <div class="item">
+                    <img src="Assets/Images/Mask Group 5.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Assets/Images/Mask Group 6.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Assets/Images/Mask Group 7.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Assets/Images/Mask Group 8.jpg" alt="">
+                </div>
+                <div class="item">
+                    <img src="Assets/Images/Mask Group 9.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <div class="ship">
+    <section class="ship">
         <div class="ship-container">
             <div class="ship-inner">
                 <img src="Assets/Images/shipped.png" alt="">
@@ -352,7 +382,7 @@
             </div>
             <p>Eassy Return</p>
         </div>
-    </div>
+    </section>
     <!-- Section for footer -->
     <footer class="footer-outer">
         <div class="footer-head pick_your">

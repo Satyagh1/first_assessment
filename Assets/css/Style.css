@@ -5,16 +5,21 @@
 
 @font-face {
     font-family: dosis;
-    src: url(../Fonts/Dosis-Regular.ttf);
+    src: url(../Fonts/dosis-regular-webfont.woff);
   }
   @font-face {
     font-family: Dream_Orphans;
-    src: url(../Fonts/Dream\ Orphans.otf);
+    src: url(../Fonts/dream_orphans-webfont.woff);
+  }
+  @font-face {
+    font-family: dosis-medium;
+    src: url(../Fonts/dosis-medium-webfont.woff);
   }
 /* whole body css */
 body {
     background-color: #FBF7EA;
     overflow-x: hidden;
+    -webkit-tap-highlight-color: transparent;
 }
 P,del {
     font-family: dosis;
@@ -51,7 +56,7 @@ P,del {
 /* search css */
 .search {
     position: relative;
-    width: 17vw;
+    width: 21vw;
 }
 
 .search input {
@@ -63,7 +68,9 @@ P,del {
     padding: 0px 10%;
     border-radius: 20px;
 }
-
+.crossmark {
+    display: none;
+}
 ::placeholder {
     font-family: dosis;
     color: #E1D7B1;
@@ -73,14 +80,15 @@ P,del {
 
 .search img {
     position: absolute;
-    right: 0vw;
-    top: 0.6vw;
+    right: -1vw;
+    top: 0.8vw;
     width: 1.5vw;
 }
-
+.top-search {
+    display: none;
+}
 .logo img {
     width: 100%;
-    height: 70px;
 }
 .navbar .login{
     display: flex;
@@ -95,6 +103,7 @@ P,del {
     font-size: 15px;
     text-decoration: none;
     color: #242424;
+    font-family: 'dosis';
 }
 
 .login span {
@@ -110,10 +119,11 @@ P,del {
 .nav_bottom button{
     border: none;
     top: 2%;
-    right: 52%;
+    right: 29%;
 }
 .toggler{
     display: none;
+    background: transparent;
 }
 .toggler-icon {
     transform: rotate(90deg);
@@ -138,8 +148,9 @@ P,del {
 .nav_bottom .mobile-menu .navbar-nav li a{
     text-decoration: none;
     color: #211F1F;
-    margin: auto 10px;
-    font-family: dosis;
+    margin: auto 14px;
+    font-family: dosis-medium;
+    font-size: 16px;
 }
 .close{
     display: none;
@@ -152,11 +163,6 @@ P,del {
 
 /* whole slider css */
 .slider {
-    background-image: url(../Images/banner.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100vw;
     margin-bottom: 4%;
 }
 .item{
@@ -169,9 +175,12 @@ P,del {
     border: none !important;
     background: transparent !important;
     cursor: pointer;
-    top: 40% !important;
+    top: 46% !important;
 }
-
+.slider .owl-nav .sm-prev img,
+.slider .owl-nav .sm-next img{
+    width: 80%;
+} 
 .owl-nav .sm-prev {
     z-index: 2 !important;
     left: 45px !important;
@@ -201,7 +210,7 @@ h2 {
     font-family: Dream_Orphans;
     text-align: center;
     color: #242424;
-    font-size: 30px;
+    font-size: 185%;
     font-weight: 200;
     padding-bottom: 20px;
 }
@@ -230,11 +239,12 @@ h2 {
 .pick .pick_your p {
     text-align: center;
     color: #545454;
-    width: 46%;
+    width: 48%;
+    line-height: 1.7;
 }
 
 .pick .pick_your h2 {
-    padding: 9px 0px;
+    padding: 5px 0px;
 }
 
 .pick .pick_your {
@@ -342,6 +352,9 @@ button.am-next {
 /* .curvy .left .curvy_head{
     width: 90%;
 } */
+.curvy .left .curvy_head p {
+        line-height: 1.5;
+}
 .curvy .left .curvy_head h2,
 .curvy .left .curvy_head p {
     text-align: left;
@@ -388,11 +401,13 @@ button.am-next {
 
 /* css for style for every ocassion */
 .ocassion {
-    padding-top: 5%;
+    padding-top: 7.5%;
     padding-bottom: 4%;
     background-color: #FAF4DD;
 }
-
+.ocassion h2{
+    padding-bottom: 0.75%;
+}
 .ocassion .ocassion_head p {
     text-align: center;
     color: #545454;
@@ -435,13 +450,22 @@ button.am-next {
     justify-content: center;
     align-items: center;
 }
-
-.bestseller .bestseller-head p {
-    text-align: center;
+.bestseller h2{
+    padding-bottom: 5%;
+}
+.bestseller .bestseller-head ul {
+    display: flex;
+    column-gap: 10px;
+}
+.bestseller .bestseller-head ul li {
+    list-style: none;
+}
+.bestseller .bestseller-head ul li a{
+    text-decoration: none;
     color: #545454;
 }
 .item-best P{
-    font-size: 16px;
+    font-size: 11px;
     padding-top: 9px;
 }
 .item-best .price p{
@@ -450,7 +474,7 @@ button.am-next {
 }
 .item-best .price{
     padding: 9px 0px;
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: space-between;
 }
@@ -478,13 +502,13 @@ button.am-next {
 
 button .bm-prev {
     z-index: 2 !important;
-    left: -4.5% !important;
+    left: -6.5% !important;
     transform: rotateY(180deg) !important;
 }
 
 button .bm-next {
     z-index: 2 !important;
-    right: -4.5% !important;
+    right: -6.5% !important;
 }
 
 .bestseller .owl-bestseller {
@@ -506,11 +530,19 @@ button .bm-next {
     row-gap: 15px;
     padding-top: 2%;
 }
-
+.hue h2{
+    padding-bottom: 0;
+}
 /* css for get a first look */
 .get-head {
     text-align: center;
     color: #545454;
+}
+.get-head h2{
+    padding-bottom: 0;
+}
+.get-head p{
+    font-size: 22px;
 }
 
 .image-get {
@@ -527,6 +559,12 @@ button .bm-next {
 }
 .image-get div img{
     width: 100%;
+}
+.no-js .owl-carousel, .owl-carousel.owl-loaded {
+    display: none;
+}
+.owldis{
+    display: none;
 }
 .ship{
     display: flex;
@@ -570,27 +608,35 @@ padding: 10px;
 }
 .footer-outer h2{
     color: #fff;
-    font-size: 150%;
+    padding-bottom: 0;
+}
+.footer-outer p{
+    font-size: 112%;
 }
 .footer-outer .footer-head div{
-    width: 110%;
+    display: flex;
+    width: 100%;
     padding-top: 1%;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .footer-outer .footer-head div button {
+    font-size: 105%;
     background-color: #C9211E;
     color: #FFFFFF;
     border: none;
     width: 20%;
     padding: 2%;
     cursor: pointer;
+    font-family: 'dosis';
 }
 .footer-outer .footer-head div input {
     background-color: #F8F0D6;
     color: #000;
     border: none;
-    width: 58%;
-    height: 30px;
-    padding: 0.5% 10%;
+    width: 60%;
+    height: 37px;
+    padding: 0.8% 8%;
 }
 .footer-inner {
     display: flex;
@@ -637,4 +683,5 @@ font-family: Dream_Orphans;
 .last p{
     color: #9D9E9E;
     padding-right: 3.5%;
+    font-size: 18px;
 }
